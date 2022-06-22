@@ -41,3 +41,4 @@ systemctl restart ntp && systemctl enable ntp && systemctl stop ufw && systemctl
 echo "script demo project 01"
 echo "script demo project 02"
 }
+basic_conf
