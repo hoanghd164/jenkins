@@ -34,9 +34,9 @@ cat > ~/.ssh/authorized_keys<< OEF
 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAxwldSynNWYEj36iWSNvsLU821sIW5cpzOWySWlaR8KrREFjNfCYQJWFRfzk+s+wrKSYGifvYxFvGEEsUMA80WEZEKQ1xY6s/lAoD1+Y5cJ5cbohNRYYno1rEUDLqz2qeARUSDyKVRw3LVtU6/01NYcGJECwavNUkzP216OUP8HmYKZXFWWLT9C6M1ftkUYaeI8RSn+cQr0UPDkJ92ERtRvsqQTpewNHSHpC7sS8lLDPR2nhXddUV1Fk8kII6gQAyH3nZ0329IUU7JwoW9RTwiD6aPkmtFQWlJSP56oHLlxr+wkk2pOoxZ5fzxpi7icbej4g9FNDBQ2KLeQWdGhNqpQ==
 OEF
 chmod 600 ~/.ssh/id_rsa;chmod 600 ~/.ssh/authorized_keys;
-timedatectl set-timezone Asia/Ho_Chi_Minh
+# timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo apt install ntp ntpdate -y
-ntpdate -u -s 0.centos.pool.ntp.org 1.centos.pool.ntp.org
+# ntpdate -u -s 0.centos.pool.ntp.org 1.centos.pool.ntp.org
 systemctl restart ntp && systemctl enable ntp && systemctl stop ufw && systemctl disable ufw && systemctl restart ssh && systemctl enable ssh
 echo "script demo project 01"
 }
