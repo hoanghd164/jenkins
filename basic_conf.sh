@@ -38,4 +38,5 @@ timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo apt install ntp ntpdate -y
 ntpdate -u -s 0.centos.pool.ntp.org 1.centos.pool.ntp.org
 systemctl restart ntp && systemctl enable ntp && systemctl stop ufw && systemctl disable ufw && systemctl restart ssh && systemctl enable ssh
+echo "script demo project 01"
 }
