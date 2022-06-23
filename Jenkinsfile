@@ -8,7 +8,7 @@ pipeline{
     }
     stage("Build Docker Image Form Docker File"){
           steps{
-            sh 'docker build -t dockerfilejob:version .'
+            sh 'docker build -t dockerfilejob:version -f dockerfile .'
           }
         }    
     }
