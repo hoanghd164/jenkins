@@ -8,7 +8,7 @@ pipeline{
     }
     stage("Build Docker Image Form Docker File"){
           steps{
-            sh 'docker build -t dockerfilejob:ver01 --force-rm -f dockerfile .'
+            sh 'docker build -t dockerfilejob:version --force-rm -f dockerfile .'
           }
         }    
     }
