@@ -1,10 +1,15 @@
 pipeline{
   agent any
   stages{
-    stage("Build"){
+    stage("Git Clone"){
       steps{
-        echo "Hello world"
+        git 'https://github.com/hoanghd164/my_project.git'
       }
     }
-  }
+    stage("Git Clone"){
+          steps{
+            sh 'docker build -t dockerfilejob:ver01 --force-rm -f dockerfile .'
+          }
+        }    
+    }
 }
