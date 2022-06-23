@@ -6,7 +6,7 @@ pipeline{
         git 'https://github.com/hoanghd164/my_project.git'
       }
     }
-    stage("Git Clone"){
+    stage("Build Docker Image Form Docker File"){
           steps{
             sh 'docker build -t dockerfilejob:ver01 --force-rm -f dockerfile .'
           }
