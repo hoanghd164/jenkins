@@ -7,7 +7,7 @@ pipeline{
         git 'https://github.com/hoanghd164/my_project.git'
       }
     }
-    stage("Build Docker Image Form Docker File"){
+    stage("Build Docker"){
           steps{
             echo "hoanghd2"
             
