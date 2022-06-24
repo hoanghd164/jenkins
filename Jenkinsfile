@@ -11,10 +11,10 @@ pipeline{
             sh 'ls'
           }
         }   
-    stage("Build"){
-          steps{           
-            sh 'docker build -t dockerfilejob:ver1 --force-rm -f Dockerfile .'
-          }
-        } 
+//     stage("Build"){
+//           steps{           
+//             sh 'docker build -t dockerfilejob:ver1 --force-rm -f Dockerfile .'
+//           }
+//         } 
     }
 }
