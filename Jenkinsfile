@@ -3,8 +3,8 @@ pipeline{
   stages{
     stage("Git Clone"){
       steps{
-        echo "hoanghd1"
-//         git 'https://github.com/hoanghd164/my_project.git'
+//         echo "hoanghd1"
+        git 'https://github.com/hoanghd164/my_project.git'
       }
     }
     stage("Build Docker Image Form Docker File"){
