@@ -7,7 +7,7 @@ pipeline{
         git 'https://github.com/hoanghd164/my_project.git'
       }
     }
-    stage("Build Docker"){
+    stage("Build"){
           steps{
             echo "hoanghd2"
             
