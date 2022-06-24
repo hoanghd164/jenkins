@@ -11,11 +11,6 @@ pipeline{
             sh 'ls'
           }
         }   
-    stage("Chmod"){
-          steps{           
-            sh 'chmod 666 /var/run/docker.sock'
-          }
-        } 
     stage("Build"){
           steps{           
             sh 'docker build -t dockerfilejob:ver1 --force-rm -f Dockerfile .'
