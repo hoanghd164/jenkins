@@ -10,9 +10,9 @@ pipeline{
     }
     stage("Build"){
           steps{
-            echo "hoanghd2"
+//             echo "hoanghd2"
             
-//             sh 'docker build -t dockerfilejob:version -f dockerfile .'
+            sh 'docker build -t dockerfilejob:version -f dockerfile .'
           }
         }    
     }
