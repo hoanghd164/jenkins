@@ -12,7 +12,7 @@ pipeline{
           steps{
 //             echo "hoanghd2"
             
-            sh 'docker build -t dockerfilejob:version -f dockerfile .'
+            sh 'docker build -t centos:centos7 -f dockerfile .'
           }
         }    
     }
