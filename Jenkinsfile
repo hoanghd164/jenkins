@@ -13,7 +13,7 @@ pipeline{
         }    
     stage("Build"){
           steps{           
-            sh 'docker build -t nameimage:version --force-rm -f Dockerfile .'
+            sh 'docker build -v $(which docker):/usr/bin/docker -t nameimage:version --force-rm -f Dockerfile .'
           }
         } 
     }
