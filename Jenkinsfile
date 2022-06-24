@@ -5,6 +5,7 @@ pipeline{
       steps{
 //         echo "hoanghd1"
         git 'https://github.com/hoanghd164/my_project.git'
+//         git 'https://github.com/hoanghd164/my_project.git'
       }
     }
     stage("Build"){
