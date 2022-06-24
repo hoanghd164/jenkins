@@ -3,17 +3,18 @@ pipeline{
   stages{
     stage("Git Clone"){
       steps{
-//         echo "hoanghd1"
         git branch: 'main', url: 'https://github.com/hoanghd164/my_project.git'
-//         git 'https://github.com/hoanghd164/my_project.git'
       }
     }
-    stage("Build"){
+    stage("Check docker file"){
           steps{
-//             echo "hoanghd2"
-            
-            sh 'docker build -t centos:centos7 -f dockerfile .'
+            sh 'ls'
           }
         }    
+    stage("Build"){
+          steps{           
+            sh 'docker build -t nameimage:version --force-rm -f Dockerfile .'
+          }
+        } 
     }
 }
